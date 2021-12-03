@@ -19,6 +19,16 @@
   --transparent: hsl(0 0% 100% / 0.00001);
   --opaque: 1;
   /* colors */
+  /* --white: hsl(var(--hs-gray) var(--l-white) / var(--opaque)); */
+  --gray-lightest: hsl(var(--hs-gray) var(--l-lightest) / var(--opaque));
+  --gray-lighter: hsl(var(--hs-gray) var(--l-lighter) / var(--opaque));
+  --gray-light: hsl(var(--hs-gray) var(--l-light) / var(--opaque));
+  --gray: hsl(var(--hs-gray) var(--l-normal) / var(--opaque));
+  --gray-dark: hsl(var(--hs-gray) var(--l-dark) / var(--opaque));
+  --gray-darker: hsl(var(--hs-gray) var(--l-darker) / var(--opaque));
+  --gray-darkest: hsl(var(--hs-gray) var(--l-darkest) / var(--opaque));
+  /* --black: hsl(var(--hs-gray) var(--l-black) / var(--opaque)); */
+
   --red-white: hsl(var(--hs-red) var(--l-white) / var(--opaque));
   --red-lightest: hsl(var(--hs-red) var(--l-lightest) / var(--opaque));
   --red-lighter: hsl(var(--hs-red) var(--l-lighter) / var(--opaque));
@@ -28,6 +38,71 @@
   --red-darker: hsl(var(--hs-red) var(--l-darker) / var(--opaque));
   --red-darkest: hsl(var(--hs-red) var(--l-darkest) / var(--opaque));
   --red-black: hsl(var(--hs-red) var(--l-black) / var(--opaque));
+
+  --green-white: hsl(var(--hs-green) var(--l-white) / var(--opaque));
+  --green-lightest: hsl(var(--hs-green) var(--l-lightest) / var(--opaque));
+  --green-lighter: hsl(var(--hs-green) var(--l-lighter) / var(--opaque));
+  --green-light: hsl(var(--hs-green) var(--l-light) / var(--opaque));
+  --green-normal: hsl(var(--hs-green) var(--l-normal) / var(--opaque));
+  --green-dark: hsl(var(--hs-green) var(--l-dark) / var(--opaque));
+  --green-darker: hsl(var(--hs-green) var(--l-darker) / var(--opaque));
+  --green-darkest: hsl(var(--hs-green) var(--l-darkest) / var(--opaque));
+  --green-black: hsl(var(--hs-green) var(--l-black) / var(--opaque));
+
+  --blue-white: hsl(var(--hs-blue) var(--l-white) / var(--opaque));
+  --blue-lightest: hsl(var(--hs-blue) var(--l-lightest) / var(--opaque));
+  --blue-lighter: hsl(var(--hs-blue) var(--l-lighter) / var(--opaque));
+  --blue-light: hsl(var(--hs-blue) var(--l-light) / var(--opaque));
+  --blue-normal: hsl(var(--hs-blue) var(--l-normal) / var(--opaque));
+  --blue-dark: hsl(var(--hs-blue) var(--l-dark) / var(--opaque));
+  --blue-darker: hsl(var(--hs-blue) var(--l-darker) / var(--opaque));
+  --blue-darkest: hsl(var(--hs-blue) var(--l-darkest) / var(--opaque));
+  --blue-black: hsl(var(--hs-blue) var(--l-black) / var(--opaque));
+
+  --yellow-white: hsl(var(--hs-yellow) var(--l-white) / var(--opaque));
+  --yellow-lightest: hsl(var(--hs-yellow) var(--l-lightest) / var(--opaque));
+  --yellow-lighter: hsl(var(--hs-yellow) var(--l-lighter) / var(--opaque));
+  --yellow-light: hsl(var(--hs-yellow) var(--l-light) / var(--opaque));
+  --yellow-normal: hsl(var(--hs-yellow) var(--l-normal) / var(--opaque));
+  --yellow-dark: hsl(var(--hs-yellow) var(--l-dark) / var(--opaque));
+  --yellow-darker: hsl(var(--hs-yellow) var(--l-darker) / var(--opaque));
+  --yellow-darkest: hsl(var(--hs-yellow) var(--l-darkest) / var(--opaque));
+  --yellow-black: hsl(var(--hs-yellow) var(--l-black) / var(--opaque));
+
+  --white: hsl(var(--hs-red) var(--l-white) / var(--opaque));
+  --brand-lightest: hsl(var(--hs-red) var(--l-lightest) / var(--opaque));
+  --brand-lighter: hsl(var(--hs-red) var(--l-lighter) / var(--opaque));
+  --brand-light: hsl(var(--hs-red) var(--l-light) / var(--opaque));
+  --brand: hsl(var(--hs-red) var(--l-normal) / var(--opaque));
+  --brand-dark: hsl(var(--hs-red) var(--l-dark) / var(--opaque));
+  --brand-darker: hsl(var(--hs-red) var(--l-darker) / var(--opaque));
+  --brand-darkest: hsl(var(--hs-red) var(--l-darkest) / var(--opaque));
+  --black: hsl(var(--hs-red) var(--l-black) / var(--opaque));
+
+  --size: clamp(1rem, 2vmin, 3rem);
+
+  --size010: calc(var(--size) * 0.1);
+  --size015: calc(var(--size) * 0.15);
+  --size025: calc(var(--size) * 0.25);
+  --size040: calc(var(--size) * 0.4);
+  --size050: calc(var(--size) * 0.5);
+  --size075: calc(var(--size) * 0.75);
+  --size0875: calc(var(--size) * 0.875);
+  --size125: calc(var(--size) * 1.25);
+  --size150: calc(var(--size) * 1.5);
+  --size200: calc(var(--size) * 2);
+  --size250: calc(var(--size) * 2.5);
+  --size300: calc(var(--size) * 3);
+  --size400: calc(var(--size) * 4);
+
+  --line-height: 1.5;
+
+  --font-sans: ui-sans-serif, system-ui, -system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Noto Sans', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
 }
 
 html,
@@ -42,10 +117,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size-adjust: 0.5;
-  color: var(--gray6);
-  font-weight: var(--weight-normal);
+  color: var(--black);
   line-height: var(--line-height);
-  background-color: var(--gray1);
+  background-color: var(--white);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   scroll-behavior: smooth;
@@ -53,5 +127,5 @@ body {
 }
 
 a {
-  color: var(--red-normal);
+  color: var(--brand);
 }
